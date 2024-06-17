@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<!-- Metadatos para seleccionar charset y hacer responsive -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Título de la web -->
+		<title>CONEVAL DASHBOARDS</title>
+
+		<!-- Injectamos el loader de Google -->
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+		<!-- Injectamos el ficheros Javascript y hoja de estilos de nuesto Dashboard -->
+		<script src="A8_EJD_charts.js">
+
+        </script> 
+		<link rel="stylesheet" href="A8_style.css">
+		<style>
+			body.dark-mode {
+				background-color: #2c2c2c;
+				color: #cccccc;
+			}
+			body.light-mode {
+				background-color: #ffffff;
+				color: #000000;
+			}
+			.chart-container {
+				width: 100%;
+				max-width: 600px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Título superior -->
+		<button id="modeButton">Switch to Dark Mode</button>
+		<div class='bottom'>[2024-C2] A8 - Daniel Espinosa</div>
+		<h1>CONEVAL Dashboard</h1>
+
+		<!-- Grid con todos los paneles -->
+		<div class="dashboard-wrapper">
+			<div id='p1' class='panel'><h2>Pobreza</h2> <div id='p1Chart'></div> </div>
+			<div id='p2' class='panel'><h2>Pobreza extrema vs moderada</h2> <div id='p2Chart'></div> </div>
+			<div id='p3' class='panel'><h2>Geo chart</h2>Cambio porcentual de nivel de pobreza por estado (2008-2018)<div id='p3Chart'></div> </div>
+			<div id='p4' class='panel'><h2>Candlestick</h2> <div id='p4Chart'></div> </div>
+			<div id='p5' class='panel'><h2>L&iacute;nea de tiempo</h2> <div id='p5Chart'></div> </div>
+		</div>
+
+		<!-- Pié de página -->
+	</body>
+</html>
